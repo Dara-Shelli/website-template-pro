@@ -13,8 +13,13 @@
   background-repeat: no-repeat; }
 
 .headerbg2 {
-  background-image: url("../images/34253245-1.jpg");
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/34253245-1.jpg");
   background-repeat: no-repeat; }
+
+.headerbg3 {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/324143214.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .bgcolorblue {
   background-color: #465cff; }
