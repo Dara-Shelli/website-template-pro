@@ -1,3 +1,31 @@
+<<<<<<< HEAD
 
+=======
+@charset "UTF-8";
+.linearbg {
+  background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/58dbbc62a29bf9980648106a_seo-manager.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.linearbg2 {
+  background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/231§43.jpg");
+  background-repeat: no-repeat; }
+
+.headerbg {
+  background-image: url("../images/231§43.jpg");
+  background-repeat: no-repeat; }
+
+.headerbg2 {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/34253245-1.jpg");
+  background-repeat: no-repeat; }
+
+.headerbg3 {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/324143214.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bgcolorblue {
+  background-color: #465cff; }
+>>>>>>> 213b34ef197a7a2c27b05c403a4f315616bf0cae
 
 /*# sourceMappingURL=style.css.map */
