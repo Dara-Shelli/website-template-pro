@@ -3,13 +3,21 @@ body, footer, header {
   font-family: 'Montserrat', sans-serif; }
 
 .btn-primary {
+  background-color: #465cff;
+  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #465cff;
-  color: white; }
-
-h2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
   font-weight: bold; }
+
+.px-7 {
+  padding-left: 7rem;
+  padding-right: 7rem; }
+
+p {
+  color: #606060; }
 
 .menulink {
   color: #606060; }
@@ -34,6 +42,9 @@ h2 {
   padding: 0 200px; }
   .goodpoints h3 {
     font-weight: bold; }
+
+.almostwhite {
+  background-color: #F6F6F6; }
 
 .linearbg {
   background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/58dbbc62a29bf9980648106a_seo-manager.jpg");

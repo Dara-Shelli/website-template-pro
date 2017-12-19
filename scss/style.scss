@@ -7,30 +7,49 @@ body, footer, header {
 $blue: #465cff;
 $paddingside: 0 200px;
 $almost-white-bg: #F6F6F6;
+$darkgrey: #606060;
 
 // Mixins
 
-@mixin menuypad {
+@mixin pady10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-@mixin bluebutton {
-  background-color: $blue;
-  color: white;
+@mixin button {
+  padding-left: 30px;
+  padding-right: 30px;
+  font: {
+    size: 13px;
+    weight: bold;
+  }
+}
+
+@mixin pady25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 // BlueButtons
 
 .btn-primary {
-  @include menuypad;
-  @include bluebutton;
+  background-color: $blue;
+  color: white;
+  @include pady10;
+  @include button;
+}
+
+// Layout
+
+.px-7 {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 // General
 
-h2 {
-  font-weight: bold;
+p {
+  color: $darkgrey;
 }
 
 // Menu
@@ -47,7 +66,7 @@ h2 {
   padding: $paddingside;
 
   .upmenuitem {
-    @include menuypad;
+    @include pady10;
     border-left: 1px solid lightgrey;
   }
 }
@@ -56,8 +75,7 @@ h2 {
   padding: $paddingside;
 
   .lowermenuitem {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @include pady25;
   }
 }
 
@@ -68,6 +86,12 @@ h2 {
   h3 {
     font-weight: bold;
   }
+}
+
+// Background colors
+
+.almostwhite {
+  background-color: $almost-white-bg;
 }
 
 .linearbg {
