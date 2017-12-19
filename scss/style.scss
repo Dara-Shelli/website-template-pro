@@ -1,4 +1,74 @@
+body, footer, header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Variables
+
 $blue: #465cff;
+$paddingside: 0 200px;
+$almost-white-bg: #F6F6F6;
+
+// Mixins
+
+@mixin menuypad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin bluebutton {
+  background-color: $blue;
+  color: white;
+}
+
+// BlueButtons
+
+.btn-primary {
+  @include menuypad;
+  @include bluebutton;
+}
+
+// General
+
+h2 {
+  font-weight: bold;
+}
+
+// Menu
+
+.menulink {
+  color: #606060;
+  i {
+    margin-right: 8px;
+  }
+}
+
+.uppermenu {
+  border-bottom: 1px solid lightgrey;
+  padding: $paddingside;
+
+  .upmenuitem {
+    @include menuypad;
+    border-left: 1px solid lightgrey;
+  }
+}
+
+.lowermenu {
+  padding: $paddingside;
+
+  .lowermenuitem {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+// Good points
+
+.goodpoints {
+  padding: $paddingside;
+  h3 {
+    font-weight: bold;
+  }
+}
 
 .linearbg {
   background: {

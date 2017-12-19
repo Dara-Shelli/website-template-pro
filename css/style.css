@@ -1,4 +1,40 @@
 @charset "UTF-8";
+body, footer, header {
+  font-family: 'Montserrat', sans-serif; }
+
+.btn-primary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #465cff;
+  color: white; }
+
+h2 {
+  font-weight: bold; }
+
+.menulink {
+  color: #606060; }
+  .menulink i {
+    margin-right: 8px; }
+
+.uppermenu {
+  border-bottom: 1px solid lightgrey;
+  padding: 0 200px; }
+  .uppermenu .upmenuitem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid lightgrey; }
+
+.lowermenu {
+  padding: 0 200px; }
+  .lowermenu .lowermenuitem {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+
+.goodpoints {
+  padding: 0 200px; }
+  .goodpoints h3 {
+    font-weight: bold; }
+
 .linearbg {
   background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/58dbbc62a29bf9980648106a_seo-manager.jpg");
   background-repeat: no-repeat;
@@ -23,6 +59,5 @@
 
 .bgcolorblue {
   background-color: #465cff; }
-
 
 /*# sourceMappingURL=style.css.map */
