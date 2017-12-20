@@ -1,5 +1,7 @@
 @charset "UTF-8";
-body, footer, header {
+body,
+footer,
+header {
   font-family: 'Montserrat', sans-serif; }
 
 .btn-primary {
@@ -16,8 +18,21 @@ body, footer, header {
   padding-left: 7rem;
   padding-right: 7rem; }
 
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem; }
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
 p {
   color: #606060; }
+
+hr {
+  border-color: #465cff;
+  width: 100px;
+  border-width: 3px; }
 
 .menulink {
   color: #606060; }
@@ -36,12 +51,67 @@ p {
   padding: 0 200px; }
   .lowermenu .lowermenuitem {
     padding-top: 25px;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    border-bottom: none; }
+
+.titlegroup p {
+  padding-top: 6rem; }
+.titlegroup hr {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .goodpoints {
   padding: 0 200px; }
   .goodpoints h3 {
     font-weight: bold; }
+
+.portfolio .card {
+  border: none; }
+  .portfolio .card .card-text {
+    text-align: center; }
+    .portfolio .card .card-text h5 {
+      font-weight: bold; }
+
+.freeship,
+.pertool,
+.proview {
+  color: white; }
+  .freeship h5,
+  .pertool h5,
+  .proview h5 {
+    font-weight: bold; }
+  .freeship p,
+  .pertool p,
+  .proview p {
+    color: white; }
+  .freeship .btn-light,
+  .pertool .btn-light,
+  .proview .btn-light {
+    color: #606060;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .freeship .btn-outline-light,
+  .pertool .btn-outline-light,
+  .proview .btn-outline-light {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .freeship .btn-primary,
+  .pertool .btn-primary,
+  .proview .btn-primary {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #465cff;
+    color: white; }
 
 .almostwhite {
   background-color: #F6F6F6; }
@@ -70,5 +140,13 @@ p {
 
 .bgcolorblue {
   background-color: #465cff; }
+
+.bgcolorblack {
+  background-color: black; }
+
+.bgmountain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/c-lad9xizbg-tim-gouw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

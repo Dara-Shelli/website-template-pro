@@ -1,21 +1,20 @@
-body, footer, header {
+body,
+footer,
+header {
   font-family: 'Montserrat', sans-serif;
 }
-
 // Variables
-
 $blue: #465cff;
 $paddingside: 0 200px;
 $almost-white-bg: #F6F6F6;
 $darkgrey: #606060;
+$black: black;
 
 // Mixins
-
 @mixin pady10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 @mixin button {
   padding-left: 30px;
   padding-right: 30px;
@@ -24,21 +23,36 @@ $darkgrey: #606060;
     weight: bold;
   }
 }
-
+@mixin smallbut {
+  padding-left: 20px;
+  padding-right: 20px;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+}
 @mixin pady25 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+@mixin title-tpad {
+  padding-top: 6rem;
+}
+@mixin whitebut {
+  color: $darkgrey;
+}
 
-// BlueButtons
-
-.btn-primary {
+@mixin bluebut {
   background-color: $blue;
   color: white;
+}
+// Buttons
+
+.btn-primary {
+  @include bluebut;
   @include pady10;
   @include button;
 }
-
 // Layout
 
 .px-7 {
@@ -46,16 +60,31 @@ $darkgrey: #606060;
   padding-right: 7rem;
 }
 
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 // General
 
 p {
   color: $darkgrey;
 }
 
+hr {
+  border-color: $blue;
+  width: 100px;
+  border-width: 3px;
+}
 // Menu
 
 .menulink {
   color: #606060;
+
   i {
     margin-right: 8px;
   }
@@ -76,20 +105,73 @@ p {
 
   .lowermenuitem {
     @include pady25;
+    border-bottom: none;
+  }
+}
+// Divs
+
+.titlegroup {
+  p {
+    @include title-tpad;
+  }
+
+  hr {
+    @include pady10;
   }
 }
 
-// Good points
-
 .goodpoints {
   padding: $paddingside;
+
   h3 {
     font-weight: bold;
   }
 }
 
-// Background colors
+.portfolio {
+  .card {
+    border: none;
 
+    .card-text {
+      text-align: center;
+
+      h5 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.freeship,
+.pertool,
+.proview {
+  color: white;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  p {
+    color: white;
+  }
+
+  .btn-light {
+    @include whitebut;
+    @include smallbut;
+    @include pady10;
+  }
+
+  .btn-outline-light {
+    @include smallbut;
+    @include pady10;
+  }
+
+  .btn-primary {
+    @include smallbut;
+    @include bluebut;
+  }
+}
+// Backgrounds
 .almostwhite {
   background-color: $almost-white-bg;
 }
@@ -133,4 +215,16 @@ p {
 
 .bgcolorblue {
   background-color: $blue;
+}
+
+.bgcolorblack {
+  background-color: $black;
+}
+
+.bgmountain {
+  background: {
+    image: radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/c-lad9xizbg-tim-gouw.jpg");
+    repeat: no-repeat;
+    size: cover;
+  }
 }
