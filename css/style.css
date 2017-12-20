@@ -5,11 +5,11 @@
   background-size: cover; }
 
 .linearbg2 {
-  background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/231§43.jpg");
+  background-image: radial-gradient(rgba(70, 92, 255, 0.7), rgba(70, 92, 255, 0.7)), url("../images/231ยง43.jpg");
   background-repeat: no-repeat; }
 
 .headerbg {
-  background-image: url("../images/231§43.jpg");
+  background-image: url("../images/231ยง43.jpg");
   background-repeat: no-repeat; }
 
 .headerbg2 {
@@ -23,5 +23,33 @@
 
 .bgcolorblue {
   background-color: #465cff; }
+
+/* main page (index.html)*/
+.container-fluid {
+  width: 100%;
+  padding: 4px; }
+  .container-fluid h6 {
+    font-size: 1.3em;
+    color: #e5edf7; }
+  .container-fluid h4 {
+    font-size: 2.5em; }
+  .container-fluid p {
+    color: #b2baff;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+  .container-fluid .left-template-container {
+    background-color: #465cff;
+    color: white;
+    padding: 10%; }
+  .container-fluid .right-template-container {
+    background-color: black;
+    color: white;
+    padding: 10%; }
+  .container-fluid .btn-primary-whiteborder {
+    border-width: 2px;
+    border-color: white;
+    color: white; }
+  .container-fluid .progress-bar {
+    background-color: #465cff; }
 
 /*# sourceMappingURL=style.css.map */

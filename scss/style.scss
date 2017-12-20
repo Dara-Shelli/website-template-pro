@@ -10,14 +10,14 @@ $blue: #465cff;
 
 .linearbg2 {
   background: {
-    image: radial-gradient(rgba(70,92,255,0.7),rgba(70,92,255,0.7)), url("../images/231§43.jpg");
+    image: radial-gradient(rgba(70,92,255,0.7),rgba(70,92,255,0.7)), url("../images/231ยง43.jpg");
     repeat: no-repeat;
   }
 }
 
 .headerbg {
   background: {
-    image: url("../images/231§43.jpg");
+    image: url("../images/231ยง43.jpg");
     repeat: no-repeat;
   }
 }
@@ -39,4 +39,54 @@ $blue: #465cff;
 
 .bgcolorblue {
   background-color: $blue;
+}
+
+
+/* main page (index.html)*/
+
+.container-fluid{
+  width: 100%;
+  padding: 4px;
+
+  h6{
+  font-size: 1.3em;
+  color: #e5edf7;
+
+  }
+
+h4{
+font-size: 2.5em;
+}
+
+p{
+  color: #b2baff;
+  padding-top:10%;
+  padding-bottom:10%;
+
+}
+
+.left-template-container {
+background-color: $blue;
+color: white;
+padding: 10%;
+
+}
+
+
+
+.right-template-container{
+  background-color: black;
+  color: white;
+  padding: 10%;
+}
+
+.btn-primary-whiteborder{
+  border-width: 2px;
+  border-color: white;
+  color: white;
+}
+
+.progress-bar{
+  background-color: $blue;
+}
 }
