@@ -65,16 +65,19 @@ hr {
   .goodpoints h3 {
     font-weight: bold; }
 
-.portfolio .card {
-  border: none; }
-  .portfolio .card .card-text {
-    text-align: center; }
-    .portfolio .card .card-text h5 {
-      font-weight: bold; }
+.portfolio {
+  padding: 0 200px; }
+  .portfolio .card {
+    border: none; }
+    .portfolio .card .card-text {
+      text-align: center; }
+      .portfolio .card .card-text h5 {
+        font-weight: bold; }
 
 .freeship,
 .pertool,
 .proview {
+  border: none;
   color: white; }
   .freeship h5,
   .pertool h5,
@@ -83,7 +86,8 @@ hr {
   .freeship p,
   .pertool p,
   .proview p {
-    color: white; }
+    color: white;
+    font-size: 14px; }
   .freeship .btn-light,
   .pertool .btn-light,
   .proview .btn-light {
@@ -112,6 +116,59 @@ hr {
     font-weight: bold;
     background-color: #465cff;
     color: white; }
+
+.blogposts {
+  padding: 0 200px; }
+  .blogposts .row .col {
+    border-radius: 5px;
+    min-height: 50vh; }
+    .blogposts .row .col p {
+      font-weight: 600;
+      font-size: 20px; }
+  .blogposts .bloglink {
+    padding-top: 40px;
+    padding-bottom: 60px; }
+    .blogposts .bloglink a {
+      color: black;
+      font-weight: bold; }
+
+footer ul:nth-child(2) hr {
+  border-width: 1px;
+  border-color: #606060;
+  width: inherit;
+  margin: 5px 0; }
+footer ul:nth-child(2) p:nth-child(3n+2) {
+  color: white;
+  margin-bottom: 5px; }
+footer ul:nth-child(3) a {
+  text-decoration: none;
+  color: #606060; }
+  footer ul:nth-child(3) a:hover {
+    color: white; }
+footer ul:nth-child(4) p:nth-child(2) {
+  color: white; }
+footer ul:nth-child(4) p:nth-child(4) {
+  color: white; }
+footer h6 {
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+footer img {
+  width: 40px;
+  padding-bottom: 40px; }
+footer div:first-of-type {
+  background-color: #1A1D1F;
+  padding: 0 200px; }
+footer div:last-of-type {
+  background-color: #131516;
+  padding: 0 200px; }
+  footer div:last-of-type p {
+    margin: 0; }
+  footer div:last-of-type a {
+    color: white; }
+    footer div:last-of-type a i {
+      color: #606060; }
 
 .almostwhite {
   background-color: #F6F6F6; }
@@ -148,5 +205,23 @@ hr {
   background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/c-lad9xizbg-tim-gouw.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.blog-bg-pc {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/23545-825x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.blog-bg-girl {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photography3-825x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.blog-bg-items {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/aaron-burden-55603-825x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */
