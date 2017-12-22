@@ -4,6 +4,10 @@ footer,
 header {
   font-family: 'Montserrat', sans-serif; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
 .btn-primary {
   background-color: #465cff;
   color: white;
@@ -197,6 +201,37 @@ footer div:last-of-type {
 
 .bgcolorblue {
   background-color: #465cff; }
+
+.sbgtest {
+  padding: 350px 0;
+  height: 100%;
+  color: white;
+  background-image: url("../images/3214321413.jpg");
+  background-size: cover;
+  background-position: center; }
+  .sbgtest div h1 {
+    font-size: 5em; }
+  .sbgtest div p {
+    font-size: .9em; }
+
+.features {
+  background-color: #f7f7f7;
+  padding-bottom: 110px;
+  padding-top: 110px; }
+  .features img {
+    margin-bottom: 20px; }
+
+.ideas {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.social-media {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  .social-media .social-logo {
+    font-size: 2.5em; }
+  .social-media .social-text {
+    line-height: 28px; }
 
 .bgcolorblack {
   background-color: black; }
