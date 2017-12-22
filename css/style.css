@@ -27,16 +27,17 @@
 /* main page (index.html)*/
 .container-fluid {
   width: 100%;
-  padding: 4px; }
-  .container-fluid h6 {
+  padding: 0; }
+  .container-fluid .left-template-container > div > h6 {
     font-size: 1.3em;
-    color: #e5edf7; }
-  .container-fluid h4 {
+    color: white; }
+  .container-fluid .left-template-container > div > h4 {
     font-size: 2.5em; }
-  .container-fluid p {
-    color: #b2baff;
+  .container-fluid .left-template-container > div > p {
+    color: white;
     padding-top: 10%;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    font-size: .8em; }
   .container-fluid .left-template-container {
     background-color: #465cff;
     color: white;
@@ -51,5 +52,38 @@
     color: white; }
   .container-fluid .progress-bar {
     background-color: #465cff; }
+
+.fact {
+  background-image: url("http://newthemes.themeple.co/setup/wp-content/uploads/2017/09/blurbg13.jpg");
+  background-size: cover;
+  color: white; }
+
+.rw-margin > .col-3 > img {
+  webkit-filter: invert(100%);
+  filter: invert(100%); }
+
+.fact > .container > .rw-margin {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+
+.border-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: solid .5px;
+  border-radius: 5px;
+  align: center;
+  margin: 1%; }
+
+.text-fact {
+  align-text: center;
+  padding-left: 5%; }
+  .text-fact h3 {
+    font-size: 1.5em; }
+  .text-fact p {
+    font-size: 0.8em; }
+  .text-fact h2 {
+    font-size: 3em; }
 
 /*# sourceMappingURL=style.css.map */
