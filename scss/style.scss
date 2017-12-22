@@ -1,4 +1,273 @@
+body,
+footer,
+header {
+  font-family: 'Montserrat', sans-serif;
+}
+// Variables
 $blue: #465cff;
+$paddingside: 0 200px;
+$almost-white: #F6F6F6;
+$darkgrey: #606060;
+$almost-black: #1A1D1F;
+$more-black: #131516;
+
+// Mixins
+@mixin pady10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@mixin button {
+  padding-left: 30px;
+  padding-right: 30px;
+  font: {
+    size: 13px;
+    weight: bold;
+  }
+}
+@mixin smallbut {
+  padding-left: 20px;
+  padding-right: 20px;
+  font: {
+    size: 12px;
+    weight: bold;
+  }
+}
+@mixin pady25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@mixin title-tpad {
+  padding-top: 6rem;
+}
+@mixin whitebut {
+  color: $darkgrey;
+}
+
+@mixin bluebut {
+  background-color: $blue;
+  color: white;
+}
+// Buttons
+
+.btn-primary {
+  @include bluebut;
+  @include pady10;
+  @include button;
+}
+// Layout
+
+.px-7 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+// General
+
+p {
+  color: $darkgrey;
+}
+
+hr {
+  border-color: $blue;
+  width: 100px;
+  border-width: 3px;
+}
+// Menu
+
+.menulink {
+  color: #606060;
+
+  i {
+    margin-right: 8px;
+  }
+}
+
+.uppermenu {
+  border-bottom: 1px solid lightgrey;
+  padding: $paddingside;
+
+  .upmenuitem {
+    @include pady10;
+    border-left: 1px solid lightgrey;
+  }
+}
+
+.lowermenu {
+  padding: $paddingside;
+
+  .lowermenuitem {
+    @include pady25;
+    border-bottom: none;
+  }
+}
+// Divs
+
+.titlegroup {
+  p {
+    @include title-tpad;
+  }
+
+  hr {
+    @include pady10;
+  }
+}
+
+.goodpoints {
+  padding: $paddingside;
+
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.portfolio {
+  padding: $paddingside;
+  .card {
+    border: none;
+
+    .card-text {
+      text-align: center;
+
+      h5 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.freeship,
+.pertool,
+.proview {
+  border: none;
+  color: white;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+  }
+
+  .btn-light {
+    @include whitebut;
+    @include smallbut;
+    @include pady10;
+  }
+
+  .btn-outline-light {
+    @include smallbut;
+    @include pady10;
+  }
+
+  .btn-primary {
+    @include smallbut;
+    @include bluebut;
+  }
+}
+
+.blogposts {
+  padding: $paddingside;
+  .row {
+  .col {
+    border-radius: 5px;
+    min-height: 50vh;
+    p {
+      font: {
+        weight: 600;
+        size: 20px;
+      }
+    }
+   }
+  }
+  .bloglink {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+// footer
+
+footer {
+
+  ul:nth-child(2) {
+    hr {
+      border-width: 1px;
+      border-color: $darkgrey;
+      width: inherit;
+      margin: 5px 0;
+    }
+    p:nth-child(3n+2) {
+      color: white;
+      margin-bottom: 5px;
+    }
+  }
+
+  ul:nth-child(3) {
+    a {
+      text-decoration: none;
+      color: $darkgrey;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  ul:nth-child(4) {
+    p:nth-child(2) {
+      color: white;
+    }
+    p:nth-child(4) {
+      color: white;
+    }
+  }
+
+  h6 {
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  img {
+    width: 40px;
+    padding-bottom: 40px;
+  }
+  div:first-of-type {
+    background-color: $almost-black;
+    padding: $paddingside;
+  }
+  div:last-of-type {
+    p {
+      margin: 0;
+    }
+    background-color: $more-black;
+    padding: $paddingside;
+    a {
+      color: white;
+      i {
+        color: $darkgrey;
+      }
+    }
+  }
+}
+// Backgrounds
+.almostwhite {
+  background-color: $almost-white;
+}
 
 .linearbg {
   background: {
@@ -39,4 +308,43 @@ $blue: #465cff;
 
 .bgcolorblue {
   background-color: $blue;
+}
+
+.bgcolorblack {
+  background-color: black;
+}
+
+.bgmountain {
+  background: {
+    image: radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/c-lad9xizbg-tim-gouw.jpg");
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+.blog-bg-pc {
+  background: {
+    image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/23545-825x600.jpg");
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+}
+
+.blog-bg-girl {
+  background: {
+    image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/photography3-825x600.jpg");
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
+}
+
+.blog-bg-items {
+  background: {
+    image: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/aaron-burden-55603-825x600.jpg");
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+  }
 }
