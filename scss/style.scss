@@ -3,11 +3,13 @@ footer,
 header {
   font-family: 'Montserrat', sans-serif;
 }
-// Variables
+
 html, body {
   height: 100%;
   width: 100%;
 }
+
+// Variables
 
 $blue: #465cff;
 $paddingside: 0 200px;
@@ -17,10 +19,17 @@ $almost-black: #1A1D1F;
 $more-black: #131516;
 
 // Mixins
+
 @mixin pady10 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+@mixin pady25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 @mixin button {
   padding-left: 30px;
   padding-right: 30px;
@@ -29,6 +38,7 @@ $more-black: #131516;
     weight: bold;
   }
 }
+
 @mixin smallbut {
   padding-left: 20px;
   padding-right: 20px;
@@ -37,13 +47,7 @@ $more-black: #131516;
     weight: bold;
   }
 }
-@mixin pady25 {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-@mixin title-tpad {
-  padding-top: 6rem;
-}
+
 @mixin whitebut {
   color: $darkgrey;
 }
@@ -52,6 +56,11 @@ $more-black: #131516;
   background-color: $blue;
   color: white;
 }
+
+@mixin title-tpad {
+  padding-top: 6rem;
+}
+
 // Buttons
 
 .btn-primary {
@@ -59,6 +68,7 @@ $more-black: #131516;
   @include pady10;
   @include button;
 }
+
 // Layout
 
 .px-7 {
@@ -75,6 +85,7 @@ $more-black: #131516;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+
 // General
 
 p {
@@ -86,6 +97,7 @@ hr {
   width: 100px;
   border-width: 3px;
 }
+
 // Menu
 
 .menulink {
@@ -114,7 +126,32 @@ hr {
     border-bottom: none;
   }
 }
-// Divs
+
+// Divs Divs Divs Divs Divs
+
+// Main Header
+
+.sbgtest {
+  padding: 350px 0;
+  height: 100%;
+  color:white;
+  background: {
+    image: url("../images/3214321413.jpg");
+    size: cover;
+    position: center;
+  }
+
+  div {
+    h1{
+      font-size: 5em;
+    }
+    p {
+      font-size: .9em;;
+    }
+  }
+}
+
+// Titlegroups
 
 .titlegroup {
   p {
@@ -126,6 +163,8 @@ hr {
   }
 }
 
+// Goodpoints
+
 .goodpoints {
   padding: $paddingside;
 
@@ -133,6 +172,47 @@ hr {
     font-weight: bold;
   }
 }
+
+// Main Progress Bars Div
+
+.idea {
+  width: 100%;
+  padding: 0;
+
+  .left-template-container > div > h6 {
+  font-size: 1.3em;
+  color: white;
+  }
+
+.left-template-container > div > h4 {
+font-size: 2.5em;
+}
+
+.left-template-container > div > p {
+  color: white;
+  padding-top:10%;
+  padding-bottom:10%;
+  font-size: .8em;
+}
+
+.left-template-container {
+background-color: $blue;
+color: white;
+padding: 10%;
+}
+
+.right-template-container {
+  background-color: black;
+  color: white;
+  padding: 10%;
+}
+
+.progress-bar {
+  background-color: $blue;
+}
+}
+
+// Portfolio
 
 .portfolio {
   padding: $paddingside;
@@ -148,6 +228,19 @@ hr {
     }
   }
 }
+
+// Main Features
+
+.features {
+  padding: $paddingside;
+  padding-bottom: 100px;
+  img {
+    margin-bottom: 20px;
+
+  }
+}
+
+// Triple Backgrounds
 
 .freeship,
 .pertool,
@@ -181,6 +274,64 @@ hr {
   }
 }
 
+// Img + Simple Div
+
+.ideas {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+// Facts (coffee)
+
+.fact {
+  background:{
+    image: url("http://newthemes.themeple.co/setup/wp-content/uploads/2017/09/blurbg13.jpg");
+    size: cover;
+    }
+  color: white;
+}
+
+  .rw-margin > .col-3 > img{
+    webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+
+.fact > .container > .rw-margin {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.border-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border:solid .5px;
+  border-radius: 5px;
+  align: center;
+  margin: 1%;
+}
+
+.text-fact {
+  align-text: center;
+  padding-left: 5%;
+
+  h3 {
+    font-size:1.5em;
+  }
+
+  p {
+    font-size: .8em
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+}
+
+// Blog Posts
+
 .blogposts {
   padding: $paddingside;
   .row {
@@ -195,6 +346,7 @@ hr {
     }
    }
   }
+
   .bloglink {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -202,6 +354,21 @@ hr {
       color: black;
       font-weight: bold;
     }
+  }
+}
+
+// Social Media
+
+.social-media {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  .social-logo{
+    font-size: 2.5em;
+  }
+
+  .social-text{
+    line-height: 28px;
   }
 }
 
@@ -247,14 +414,17 @@ footer {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+
   img {
     width: 40px;
     padding-bottom: 40px;
   }
+
   div:first-of-type {
     background-color: $almost-black;
     padding: $paddingside;
   }
+
   div:last-of-type {
     p {
       margin: 0;
@@ -269,7 +439,9 @@ footer {
     }
   }
 }
+
 // Backgrounds
+
 .almostwhite {
   background-color: $almost-white;
 }
@@ -315,54 +487,6 @@ footer {
   background-color: $blue;
 }
 
-.sbgtest {
-  padding: 350px 0;
-  height: 100%;
-  color:white;
-  background: {
-    image: url("../images/3214321413.jpg");
-    size: cover;
-    position: center;
-  }
-
-  div {
-    h1{
-      font-size: 5em;
-    }
-    p {
-      font-size: .9em;;
-    }
-  }
-}
-
-
-.features{
-  padding: $paddingside;
-  padding-bottom: 100px;
-  img {
-    margin-bottom: 20px;
-
-  }
-}
-
-.ideas {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.social-media {
-  padding-top: 150px;
-  padding-bottom: 150px;
-
-  .social-logo{
-    font-size: 2.5em;
-  }
-
-  .social-text{
-    line-height: 28px;
-  }
-}
-
 .bgcolorblack {
   background-color: black;
 }
@@ -399,107 +523,5 @@ footer {
     repeat: no-repeat;
     size: cover;
     position: center;
-  }
-}
-
-
-/* main page (index.html)*/
-
-.container-fluid{
-  width: 100%;
-  padding: 0;
-
-  .left-template-container > div > h6{
-  font-size: 1.3em;
-  color: white;
-
-  }
-
-.left-template-container > div > h4{
-font-size: 2.5em;
-}
-
-.left-template-container > div > p{
-  color: white;
-  padding-top:10%;
-  padding-bottom:10%;
-  font-size: .8em;
-
-}
-
-.left-template-container {
-background-color: $blue;
-color: white;
-padding: 10%;
-
-}
-
-
-
-.right-template-container{
-  background-color: black;
-  color: white;
-  padding: 10%;
-}
-
-.btn-primary-whiteborder{
-  border-width: 2px;
-  border-color: white;
-  color: white;
-}
-
-.progress-bar{
-  background-color: $blue;
-}
-}
-
-
-
-.fact{
-  background:{
-    image: url("http://newthemes.themeple.co/setup/wp-content/uploads/2017/09/blurbg13.jpg");
-    size: cover;
-    }
-  color: white;
-}
-
-  .rw-margin > .col-3 > img{
-    webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
-
-
-.fact > .container > .rw-margin{
-  padding-top: 10%;
-  padding-bottom: 10%; 
-}
-
-.border-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border:solid .5px;
-  border-radius: 5px;
-  align: center;
-  margin: 1%;
-}
-
-
-
-.text-fact{
-  align-text: center;
-  padding-left: 5%;
-
-  h3{
-    font-size:1.5em;
-  }
-  
-  p{
-    font-size: .8em
-  }
-
-  h2{
-    font-size: 3em;
   }
 }
