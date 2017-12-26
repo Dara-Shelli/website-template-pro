@@ -18,6 +18,9 @@ html, body {
   font-size: 13px;
   font-weight: bold; }
 
+.pt-6 {
+  padding-top: 6rem; }
+
 .px-7 {
   padding-left: 7rem;
   padding-right: 7rem; }
@@ -37,6 +40,23 @@ hr {
   border-color: #465cff;
   width: 100px;
   border-width: 3px; }
+
+.longline {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.5px;
+  border-color: lightgrey;
+  width: 100%; }
+
+.blue {
+  color: #465cff; }
+
+.mh400 {
+  max-height: 400px; }
 
 .menulink {
   color: #606060; }
@@ -84,11 +104,12 @@ hr {
 .idea {
   width: 100%;
   padding: 0; }
-  .idea .left-template-container > div > h6 {
+  .idea h6 {
     font-size: 1.3em;
     color: white; }
-  .idea .left-template-container > div > h4 {
-    font-size: 2.5em; }
+  .idea h4 {
+    font-size: 2.5em;
+    font-weight: bold; }
   .idea .left-template-container > div > p {
     color: white;
     padding-top: 10%;
@@ -116,7 +137,7 @@ hr {
 
 .features {
   padding: 0 200px;
-  padding-bottom: 100px; }
+  padding-bottom: 80px; }
   .features img {
     margin-bottom: 20px; }
 
@@ -222,6 +243,14 @@ hr {
     font-size: 2.5em; }
   .social-media .social-text {
     line-height: 28px; }
+
+.cardposts {
+  padding-left: 200px;
+  padding-right: 200px; }
+  .cardposts h5 {
+    font-weight: bold; }
+  .cardposts img {
+    margin-right: 5px; }
 
 footer ul:nth-child(2) hr {
   border-width: 1px;
