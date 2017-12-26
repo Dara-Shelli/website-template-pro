@@ -284,14 +284,14 @@ footer {
 
 .linearbg2 {
   background: {
-    image: radial-gradient(rgba(70,92,255,0.7),rgba(70,92,255,0.7)), url("../images/231§43.jpg");
+    image: radial-gradient(rgba(70,92,255,0.7),rgba(70,92,255,0.7)), url("../images/231ยง43.jpg");
     repeat: no-repeat;
   }
 }
 
 .headerbg {
   background: {
-    image: url("../images/231§43.jpg");
+    image: url("../images/231ยง43.jpg");
     repeat: no-repeat;
   }
 }
@@ -399,5 +399,107 @@ footer {
     repeat: no-repeat;
     size: cover;
     position: center;
+  }
+}
+
+
+/* main page (index.html)*/
+
+.container-fluid{
+  width: 100%;
+  padding: 0;
+
+  .left-template-container > div > h6{
+  font-size: 1.3em;
+  color: white;
+
+  }
+
+.left-template-container > div > h4{
+font-size: 2.5em;
+}
+
+.left-template-container > div > p{
+  color: white;
+  padding-top:10%;
+  padding-bottom:10%;
+  font-size: .8em;
+
+}
+
+.left-template-container {
+background-color: $blue;
+color: white;
+padding: 10%;
+
+}
+
+
+
+.right-template-container{
+  background-color: black;
+  color: white;
+  padding: 10%;
+}
+
+.btn-primary-whiteborder{
+  border-width: 2px;
+  border-color: white;
+  color: white;
+}
+
+.progress-bar{
+  background-color: $blue;
+}
+}
+
+
+
+.fact{
+  background:{
+    image: url("http://newthemes.themeple.co/setup/wp-content/uploads/2017/09/blurbg13.jpg");
+    size: cover;
+    }
+  color: white;
+}
+
+  .rw-margin > .col-3 > img{
+    webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+
+.fact > .container > .rw-margin{
+  padding-top: 10%;
+  padding-bottom: 10%; 
+}
+
+.border-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border:solid .5px;
+  border-radius: 5px;
+  align: center;
+  margin: 1%;
+}
+
+
+
+.text-fact{
+  align-text: center;
+  padding-left: 5%;
+
+  h3{
+    font-size:1.5em;
+  }
+  
+  p{
+    font-size: .8em
+  }
+
+  h2{
+    font-size: 3em;
   }
 }
